@@ -17,7 +17,8 @@
 @media(max-width:900px){ .blog-listing-grid { grid-template-columns:1fr; } }
 .blog-card-listing { background:#FFFFFF;border:1px solid #E4E2DD;display:flex;flex-direction:column;transition:border-color .2s; }
 .blog-card-listing:hover { border-color:#4D6150; }
-.blog-card-listing .card-img { width:100%;height:200px;background:#FFFFFF;border-bottom:1px solid #E4E2DD;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#706C61; }
+.blog-card-listing .card-img { width:100%;height:200px;background:#FFFFFF;border-bottom:1px solid #E4E2DD;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#706C61;overflow:hidden; }
+.blog-card-listing .card-img img { width:100%;height:100%;object-fit:cover; }
 .blog-card-listing .card-body { padding:24px; }
 .blog-card-listing .card-meta { display:flex;gap:12px;align-items:center;margin-bottom:10px; }
 .blog-card-listing .card-category { font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#4D6150;color:#FFFFFF;padding:3px 8px; }
@@ -64,8 +65,7 @@
             <!-- Featured Post -->
             <div class="blog-card-listing featured-article fade-in">
               <div class="card-img" style="height:280px;">
-                <span class="material-symbols-outlined" style="font-size:48px;color:#4D6150;">cleaning_services</span>
-                <span style="font-size:12px;">Featured post image placeholder</span>
+                <img src="images/blog/blog-1-carpet-cleaning-frequency.jpg" alt="Vacuuming a carpet at home">
               </div>
               <div class="card-body">
                 <div class="card-meta">
@@ -82,8 +82,7 @@
             <!-- Post 2 -->
             <div class="blog-card-listing fade-in">
               <div class="card-img">
-                <span class="material-symbols-outlined" style="font-size:40px;color:#4D6150;">pets</span>
-                <span style="font-size:12px;">Post image placeholder</span>
+                <img src="images/blog/blog-2-pet-odour-dogs-rug.jpg" alt="Two dogs sitting on a rug">
               </div>
               <div class="card-body">
                 <div class="card-meta">
@@ -100,8 +99,7 @@
             <!-- Post 3 -->
             <div class="blog-card-listing fade-in">
               <div class="card-img">
-                <span class="material-symbols-outlined" style="font-size:40px;color:#4D6150;">key</span>
-                <span style="font-size:12px;">Post image placeholder</span>
+                <img src="images/blog/blog-3-end-of-lease-moving.jpg" alt="Woman packing moving boxes in an apartment">
               </div>
               <div class="card-body">
                 <div class="card-meta">
@@ -118,8 +116,7 @@
             <!-- Post 4 -->
             <div class="blog-card-listing fade-in">
               <div class="card-img">
-                <span class="material-symbols-outlined" style="font-size:40px;color:#4D6150;">water_drop</span>
-                <span style="font-size:12px;">Post image placeholder</span>
+                <img src="images/blog/blog-4-steam-cleaning.jpg" alt="Professional steam cleaning a carpet">
               </div>
               <div class="card-body">
                 <div class="card-meta">
@@ -136,8 +133,7 @@
             <!-- Post 5 -->
             <div class="blog-card-listing fade-in">
               <div class="card-img">
-                <span class="material-symbols-outlined" style="font-size:40px;color:#4D6150;">local_laundry_service</span>
-                <span style="font-size:12px;">Post image placeholder</span>
+                <img src="images/blog/blog-5-carpet-stain.jpg" alt="Wine glass on a patterned carpet">
               </div>
               <div class="card-body">
                 <div class="card-meta">
@@ -154,8 +150,7 @@
             <!-- Post 6 -->
             <div class="blog-card-listing fade-in">
               <div class="card-img">
-                <span class="material-symbols-outlined" style="font-size:40px;color:#4D6150;">chair</span>
-                <span style="font-size:12px;">Post image placeholder</span>
+                <img src="images/blog/blog-6-upholstery-cleaning.jpg" alt="Professional cleaning an upholstered ottoman">
               </div>
               <div class="card-body">
                 <div class="card-meta">
