@@ -1,3 +1,26 @@
 {
-  "version": 2
+  "version": 2,
+  "redirects": [
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/about-us", "destination": "/about.html", "permanent": true },
+    { "source": "/contact", "destination": "/contact.html", "permanent": true },
+    { "source": "/services", "destination": "/services.html", "permanent": true },
+
+    { "source": "/carpet-cleaning", "destination": "/carpet-cleaning.html", "permanent": true },
+    { "source": "/commercial-carpet-cleaning", "destination": "/commercial-carpet-cleaning.html", "permanent": true },
+    { "source": "/upholstery-cleaning", "destination": "/upholstery-cleaning.html", "permanent": true },
+    { "source": "/mattress-cleaning", "destination": "/mattress-cleaning.html", "permanent": true },
+    { "source": "/rug-cleaning", "destination": "/rug-cleaning.html", "permanent": true },
+    { "source": "/leather-cleaning", "destination": "/leather-cleaning.html", "permanent": true },
+    { "source": "/water-damage-restoration", "destination": "/water-damage-restoration.html", "permanent": true },
+    { "source": "/tile-and-grout-cleaning", "destination": "/tile-and-grout-cleaning.html", "permanent": true },
+    { "source": "/carpet-and-fabric-protection", "destination": "/carpet-and-fabric-protection.html", "permanent": true },
+
+    { "source": "/campbelltown", "destination": "/campbelltown.html", "permanent": true },
+    { "source": "/liverpool", "destination": "/liverpool.html", "permanent": true },
+    { "source": "/sutherland-shire", "destination": "/service-areas.html", "permanent": true },
+
+    { "source": "/blog", "destination": "/blog.html", "permanent": true },
+    { "source": "/blog/:path*", "destination": "/blog.html", "permanent": true }
+  ]
 }

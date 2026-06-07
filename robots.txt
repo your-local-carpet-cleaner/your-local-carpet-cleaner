@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yourlocalcarpetcleaner.com.au/sitemap.xml

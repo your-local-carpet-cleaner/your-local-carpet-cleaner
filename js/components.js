@@ -27,7 +27,7 @@ function navLink(href, label, page) {
 /* ── Utility bar + sticky header ──────────── */
 function buildHeader() {
   const page = activePage();
-  const svcActive = ['carpet-cleaning','upholstery-cleaning','rug-cleaning','mattress-cleaning','stain-odour-removal','end-of-lease-cleaning','commercial-carpet-cleaning'].includes(page);
+  const svcActive = ['carpet-cleaning','upholstery-cleaning','rug-cleaning','mattress-cleaning','stain-odour-removal','end-of-lease-cleaning','commercial-carpet-cleaning','leather-cleaning','water-damage-restoration','tile-and-grout-cleaning','carpet-and-fabric-protection'].includes(page);
 
   return `
 
@@ -59,9 +59,14 @@ function buildHeader() {
           <a href="${root('stain-odour-removal.html')}">Stain &amp; Odour Removal</a>
           <a href="${root('end-of-lease-cleaning.html')}">End of Lease Cleaning</a>
           <a href="${root('commercial-carpet-cleaning.html')}">Commercial Cleaning</a>
+          <a href="${root('leather-cleaning.html')}">Leather Cleaning</a>
+          <a href="${root('water-damage-restoration.html')}">Water Damage Restoration</a>
+          <a href="${root('tile-and-grout-cleaning.html')}">Tile &amp; Grout Cleaning</a>
+          <a href="${root('carpet-and-fabric-protection.html')}">Carpet &amp; Fabric Protection</a>
         </div>
       </div>
 
+      <a href="${root('service-areas.html')}" class="desk-nav-link${page==='service-areas'?' active':''}">Service Areas</a>
       <a href="${root('gallery.html')}" class="desk-nav-link${page==='gallery'?' active':''}">Gallery</a>
       <a href="${root('reviews.html')}" class="desk-nav-link${page==='reviews'?' active':''}">Reviews</a>
       <a href="${root('blog.html')}" class="desk-nav-link${page==='blog'||page.startsWith('blog-post')?' active':''}">Blog</a>
@@ -109,7 +114,12 @@ function buildHeader() {
       <a href="${root('stain-odour-removal.html')}">Stain &amp; Odour Removal</a>
       <a href="${root('end-of-lease-cleaning.html')}">End of Lease Cleaning</a>
       <a href="${root('commercial-carpet-cleaning.html')}">Commercial Cleaning</a>
+      <a href="${root('leather-cleaning.html')}">Leather Cleaning</a>
+      <a href="${root('water-damage-restoration.html')}">Water Damage Restoration</a>
+      <a href="${root('tile-and-grout-cleaning.html')}">Tile &amp; Grout Cleaning</a>
+      <a href="${root('carpet-and-fabric-protection.html')}">Carpet &amp; Fabric Protection</a>
     </div>
+    <a href="${root('service-areas.html')}" class="${page==='service-areas'?'active':''}">Service Areas</a>
     <a href="${root('gallery.html')}" class="${page==='gallery'?'active':''}">Gallery</a>
     <a href="${root('reviews.html')}" class="${page==='reviews'?'active':''}">Reviews</a>
     <a href="${root('blog.html')}" class="${page==='blog'||page.startsWith('blog-post')?'active':''}">Blog</a>
@@ -155,6 +165,7 @@ function buildFooter() {
           <li><a href="${root('index.html')}">Home</a></li>
           <li><a href="${root('about.html')}">About Us</a></li>
           <li><a href="${root('services.html')}">All Services</a></li>
+          <li><a href="${root('service-areas.html')}">Service Areas</a></li>
           <li><a href="${root('gallery.html')}">Gallery</a></li>
           <li><a href="${root('reviews.html')}">Reviews</a></li>
           <li><a href="${root('blog.html')}">Blog</a></li>
@@ -173,6 +184,10 @@ function buildFooter() {
           <li><a href="${root('stain-odour-removal.html')}">Stain &amp; Odour Removal</a></li>
           <li><a href="${root('end-of-lease-cleaning.html')}">End of Lease Cleaning</a></li>
           <li><a href="${root('commercial-carpet-cleaning.html')}">Commercial Cleaning</a></li>
+          <li><a href="${root('leather-cleaning.html')}">Leather Cleaning</a></li>
+          <li><a href="${root('water-damage-restoration.html')}">Water Damage Restoration</a></li>
+          <li><a href="${root('tile-and-grout-cleaning.html')}">Tile &amp; Grout Cleaning</a></li>
+          <li><a href="${root('carpet-and-fabric-protection.html')}">Carpet &amp; Fabric Protection</a></li>
         </ul>
       </div>
 
@@ -192,17 +207,17 @@ function buildFooter() {
     <!-- Service areas -->
     <div class="footer-areas">
       <span>Serving:</span>
-      <span>Sydney</span><span class="sep">·</span>
-      <span>Sefton</span><span class="sep">·</span>
-      <span>Prestons</span><span class="sep">·</span>
-      <span>Revesby</span><span class="sep">·</span>
-      <span>Parramatta</span><span class="sep">·</span>
-      <span>Liverpool</span><span class="sep">·</span>
-      <span>Bankstown</span><span class="sep">·</span>
-      <span>Campbelltown</span><span class="sep">·</span>
-      <span>Penrith</span><span class="sep">·</span>
-      <span>Chatswood</span><span class="sep">·</span>
-      <span>Surrounding suburbs</span>
+      <a href="${root('sydney.html')}">Sydney</a><span class="sep">·</span>
+      <a href="${root('sefton.html')}">Sefton</a><span class="sep">·</span>
+      <a href="${root('prestons.html')}">Prestons</a><span class="sep">·</span>
+      <a href="${root('revesby.html')}">Revesby</a><span class="sep">·</span>
+      <a href="${root('parramatta.html')}">Parramatta</a><span class="sep">·</span>
+      <a href="${root('liverpool.html')}">Liverpool</a><span class="sep">·</span>
+      <a href="${root('bankstown.html')}">Bankstown</a><span class="sep">·</span>
+      <a href="${root('campbelltown.html')}">Campbelltown</a><span class="sep">·</span>
+      <a href="${root('penrith.html')}">Penrith</a><span class="sep">·</span>
+      <a href="${root('chatswood.html')}">Chatswood</a><span class="sep">·</span>
+      <a href="${root('service-areas.html')}">Surrounding suburbs</a>
     </div>
 
     <div class="footer-bottom">
@@ -263,6 +278,10 @@ function buildModal() {
             <option>Stain &amp; Odour Removal</option>
             <option>End of Lease Cleaning</option>
             <option>Commercial Carpet Cleaning</option>
+            <option>Leather Cleaning</option>
+            <option>Water Damage Restoration</option>
+            <option>Tile &amp; Grout Cleaning</option>
+            <option>Carpet &amp; Fabric Protection</option>
           </select>
         </div>
         <div class="form-group">
