@@ -715,7 +715,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(251,249,244,0.88);
+  background: rgba(255,255,255,0.88);
 }
 .cta-headline {
   font-family: 'Playfair Display', serif;
