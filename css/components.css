@@ -291,18 +291,18 @@
 @media (max-width: 767px) { .footer-inner { padding: 40px 16px 24px; } }
 
 .footer-emergency {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 16px;
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 16px;
   background: #1d40ab;
   border-radius: 12px;
   padding: 20px 28px;
   margin-bottom: 40px;
-  font-size: 22px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; line-height: 1.2;
+  font-size: 22px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; line-height: 1.2; text-align: center;
 }
 .footer-emergency-icon {
   font-size: 28px; flex-shrink: 0; opacity: 0.9;
 }
 .footer-emergency-cta {
-  margin-left: auto; flex-shrink: 0;
+  flex-shrink: 0;
   font-size: 15px; font-weight: 700; color: #1d40ab;
   background: #FFFFFF; border: 1px solid rgba(255,255,255,0.4);
   border-radius: 8px; padding: 8px 18px; text-decoration: none;
