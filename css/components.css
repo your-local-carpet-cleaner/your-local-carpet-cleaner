@@ -255,19 +255,36 @@
 
 
 /* ── WhatsApp FAB ────────────────────────── */
-.whatsapp-fab {
+.whatsapp-fab-wrap {
   position: fixed; bottom: 24px; right: 24px;
+  display: flex; align-items: center; gap: 10px;
+  z-index: 900;
+}
+.whatsapp-fab-label {
+  background: #FFFFFF;
+  color: #374151;
+  font-size: 14px; font-weight: 400;
+  padding: 10px 18px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.whatsapp-fab-label strong { color: #111111; font-weight: 700; }
+
+.whatsapp-fab {
   width: 56px; height: 56px; background: #25D366;
   display: flex; align-items: center; justify-content: center;
-  border-radius: 50%; z-index: 900;
+  border-radius: 50%; flex-shrink: 0;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(29,64,171,0.3);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   transition: transform 0.2s;
 }
 @media (min-width: 768px) { .whatsapp-fab { width: 64px; height: 64px; } }
 .whatsapp-fab:hover { transform: scale(1.1); }
 .whatsapp-fab svg { width: 28px; height: 28px; fill: #ffffff; }
 @media (min-width: 768px) { .whatsapp-fab svg { width: 32px; height: 32px; } }
+@media (max-width: 480px) { .whatsapp-fab-label { display: none; } }
 
 /* ── Modal submit ────────────────────────── */
 .modal-submit {
