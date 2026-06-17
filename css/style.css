@@ -800,13 +800,14 @@ body { color: #1A2B32; }
 /* Section header divider: tinted blue instead of flat gray */
 .section-header { border-bottom-color: rgba(29,64,171,0.14); }
 
-/* Hero stats bar: fully opaque white + a blue top hairline */
+/* Hero stats bar: solid blue strip anchoring the bottom of the hero */
 .hero-stats-bar {
-  background: #FFFFFF;
-  border-top: 2px solid rgba(29,64,171,0.15);
+  background: #1d40ab;
+  border-top: none;
 }
-/* Stat numbers pop in blue — highest-frequency "wow" number on the page */
-.hero-stat-n { color: #1d40ab; }
+.hero-stat-n { color: #FFFFFF; }
+.hero-stat-l { color: rgba(255,255,255,0.7); }
+.hero-stat-divider { background: rgba(255,255,255,0.2); }
 
 /* Service grid cards: 3px blue top accent transforms a plain white card */
 .svc-grid-card { border-top: 3px solid #1d40ab; }
