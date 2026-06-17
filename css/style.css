@@ -35,10 +35,10 @@ body {
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 @media (max-width: 767px) { .container { padding: 0 16px; } }
 
-.section-dark    { background: #F8F9FC; padding: 80px 0; border-bottom: 1px solid #E5E7EB; }
+.section-dark    { background: #FFFFFF; padding: 80px 0; border-bottom: 1px solid #E5E7EB; }
 .section-mid     { background: #FFFFFF; padding: 80px 0; border-bottom: 1px solid #E5E7EB; }
-.section-charcoal{ background: #F8F9FC; padding: 80px 0; border-bottom: 1px solid #E5E7EB; }
-.section-darkest { background: #F3F4F6; padding: 48px 0; border-bottom: 1px solid #E5E7EB; }
+.section-charcoal{ background: #FFFFFF; padding: 80px 0; border-bottom: 1px solid #E5E7EB; }
+.section-darkest { background: #FFFFFF; padding: 48px 0; border-bottom: 1px solid #E5E7EB; }
 
 .section-header {
   display: flex;
@@ -53,7 +53,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: clamp(26px, 4vw, 42px);
   font-weight: 600;
-  color: #1530a0;
+  color: #111111;
   letter-spacing: -.01em;
   line-height: 1.1;
 }
@@ -228,7 +228,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 700;
-  color: #1530a0;
+  color: #111111;
   letter-spacing: -.01em;
   line-height: 1;
 }
@@ -277,10 +277,24 @@ body {
   background-position: center;
   opacity: 0;
   transition: opacity .4s;
+  z-index: 0;
+}
+.svc-grid-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.52);
+  opacity: 0;
+  transition: opacity .4s;
+  z-index: 1;
 }
 
 .svc-grid-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -10px rgba(29,64,171,0.16); }
-.svc-grid-card:hover::before { opacity: 0.08; }
+.svc-grid-card:hover::before { opacity: 1; }
+.svc-grid-card:hover::after { opacity: 1; }
+.svc-grid-card:hover .svc-grid-title { color: #ffffff; }
+.svc-grid-card:hover .svc-grid-desc  { color: rgba(255,255,255,0.85); }
+.svc-grid-card:hover .svc-icon-sm    { color: rgba(255,255,255,0.85); }
 
 .svc-grid-card--cta {
   background: #1d40ab !important;
@@ -302,23 +316,26 @@ body {
   margin-bottom: 12px;
   display: block;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  transition: color .3s;
 }
 .svc-grid-title {
   font-family: 'Playfair Display', serif;
   font-size: 17px;
   font-weight: 600;
-  color: #1530a0;
+  color: #111111;
   margin-bottom: 8px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  transition: color .3s;
 }
 .svc-grid-desc {
   font-size: 13px;
   color: #6B7280;
   line-height: 1.5;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  transition: color .3s;
 }
 
 /* ── Split / featured service ────────── */
@@ -375,7 +392,7 @@ body {
 
 .split-content {
   padding: 48px;
-  background: #F8F9FC;
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +411,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: clamp(26px, 3vw, 38px);
   font-weight: 600;
-  color: #1530a0;
+  color: #111111;
   line-height: 1.15;
   margin-bottom: 24px;
   letter-spacing: -.01em;
@@ -459,7 +476,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 17px;
   font-weight: 600;
-  color: #1530a0;
+  color: #111111;
   margin-bottom: 10px;
   letter-spacing: 0;
 }
@@ -506,7 +523,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
-  color: #1530a0;
+  color: #111111;
   margin-bottom: 8px;
 }
 .process-desc { font-size: 12px; color: #6B7280; line-height: 1.55; }
@@ -547,7 +564,7 @@ body {
   overflow: hidden;
   cursor: ew-resize;
   user-select: none;
-  background: #F3F4F6;
+  background: #FFFFFF;
   border-radius: 24px;
 }
 
@@ -677,14 +694,14 @@ body {
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
-  color: #1530a0;
+  color: #111111;
   margin-bottom: 20px;
 }
 .suburb-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 28px; }
 
 /* ── CTA strip ───────────────────────── */
 .cta-strip {
-  background: #F8F9FC;
+  background: #FFFFFF;
   padding: 80px 0;
   border-top: 1px solid #E5E7EB;
   text-align: center;
@@ -704,7 +721,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: clamp(24px, 4vw, 40px);
   font-weight: 600;
-  color: #1530a0;
+  color: #111111;
   letter-spacing: -.01em;
   margin-bottom: 16px;
   line-height: 1.15;
@@ -729,7 +746,7 @@ body {
 
 /* ── Image placeholder fallback ──────── */
 .img-placeholder {
-  background: #F8F9FC;
+  background: #FFFFFF;
   display: flex; align-items: center; justify-content: center;
   color: #6B7280; font-size: 13px;
   text-align: center; padding: 16px;
