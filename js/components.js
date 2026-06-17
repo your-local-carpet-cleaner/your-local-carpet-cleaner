@@ -225,6 +225,7 @@ function buildFooter() {
       <a href="${root('campbelltown.html')}">Campbelltown</a><span class="sep">·</span>
       <a href="${root('penrith.html')}">Penrith</a><span class="sep">·</span>
       <a href="${root('chatswood.html')}">Chatswood</a><span class="sep">·</span>
+      <a href="${root('service-areas.html')}">Sutherland Shire</a><span class="sep">·</span>
       <a href="${root('service-areas.html')}">Surrounding suburbs</a>
     </div>
 
