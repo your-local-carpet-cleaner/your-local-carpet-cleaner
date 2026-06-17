@@ -3,7 +3,6 @@
 const PHONE_DISPLAY  = '0451 286 550';
 const PHONE_LINK     = '0451286550';
 const WA_LINK        = 'https://wa.me/61451286550?text=Hi%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20carpet%20cleaning';
-const FORMSPREE_URL  = 'https://formspree.io/f/YOUR_FORM_ID';
 const THANKYOU_URL   = 'thank-you.html';
 
 /* Resolve paths relative to site root when pages are in subdirectories */
@@ -261,9 +260,7 @@ function buildModal() {
     </button>
     <h2 id="modal-title">Request a Free Quote</h2>
     <p class="modal-sub">We'll call you back within the hour. No obligation.</p>
-    <form class="modal-form" action="${FORMSPREE_URL}" method="POST">
-      <input type="hidden" name="_subject" value="New Quote Request — Your Local Carpet Cleaner">
-      <input type="hidden" name="_next" value="${THANKYOU_URL}">
+    <form class="modal-form" id="modal-form">
       <div class="form-row">
         <div class="form-group">
           <label for="modal-name">Full Name *</label>
@@ -352,6 +349,26 @@ function initModal() {
   overlay.addEventListener('click', closeModal);
   closeBtn.addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  document.getElementById('modal-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(this))),
+      });
+      if (!res.ok) throw new Error();
+      window.location.href = THANKYOU_URL;
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Send Quote Request';
+      alert('Something went wrong. Please call us on 0451 286 550.');
+    }
+  });
 
   // Focus trap
   modal.addEventListener('keydown', e => {
