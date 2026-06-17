@@ -476,6 +476,7 @@
 /* Review card */
 .review-card {
   background: #FFFFFF; border: 1px solid #E5E7EB;
+  border-top: 3px solid #1d40ab;
   border-radius: 24px;
   padding: 28px;
   box-shadow: 0 10px 30px -10px rgba(29,64,171,0.1);

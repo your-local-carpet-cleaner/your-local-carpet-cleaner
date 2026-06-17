@@ -786,3 +786,46 @@ body {
   .why-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; }
 }
+
+/* ─── Colour balance: frequency-over-volume ───────────────────
+   Backgrounds stay pure white. Blue injected through micro-elements:
+   card borders, icon containers, numbers, badges, typography.
+   ─────────────────────────────────────────────────────────── */
+
+/* Body: deep navy instead of pure black keeps text readable but warmer */
+body { color: #1A2B32; }
+.section-title { color: #1A2B32; }
+.split-title { color: #1A2B32; }
+
+/* Section header divider: tinted blue instead of flat gray */
+.section-header { border-bottom-color: rgba(29,64,171,0.14); }
+
+/* Hero stats bar: fully opaque white + a blue top hairline */
+.hero-stats-bar {
+  background: #FFFFFF;
+  border-top: 2px solid rgba(29,64,171,0.15);
+}
+/* Stat numbers pop in blue — highest-frequency "wow" number on the page */
+.hero-stat-n { color: #1d40ab; }
+
+/* Service grid cards: 3px blue top accent transforms a plain white card */
+.svc-grid-card { border-top: 3px solid #1d40ab; }
+/* CTA card already has full blue background — keep it consistent */
+.svc-grid-card--cta { border-top: 3px solid rgba(255,255,255,0.25); }
+
+/* Why cards: matching top accent + stronger icon container */
+.why-card { border-top: 3px solid #1d40ab; }
+.why-icon-wrap { background: rgba(29,64,171,0.08); border-color: rgba(29,64,171,0.15); }
+
+/* Process steps: faint blue ghost numbers (was near-invisible gray) */
+.process-num { color: rgba(29,64,171,0.13); }
+/* Thin blue left rail on each step — creates a visual throughline */
+.process-step { border: 1px solid #E5E7EB; border-left: 3px solid rgba(29,64,171,0.3); }
+/* Highlighted step keeps its full blue background */
+.process-step--highlight { border-left-color: rgba(255,255,255,0.3); }
+
+/* Split section badge: flip to blue background — premium floating badge */
+.split-img-badge { background: #1d40ab; color: #FFFFFF; }
+
+/* Review score card: left blue accent rail */
+.score-card { border-left: 4px solid #1d40ab; border-radius: 0 24px 24px 0; }

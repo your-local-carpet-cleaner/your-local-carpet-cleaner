@@ -12,7 +12,7 @@
   --color-surface-container-low: #FAFAFA;
   --color-surface-container-lowest: #FFFFFF;
 
-  --color-on-surface:         #111111;
+  --color-on-surface:         #1A2B32;
   --color-on-surface-variant: #374151;
   --color-warm-grey:          #6B7280;
   --color-outline:            #9CA3AF;
@@ -21,6 +21,9 @@
   --color-whatsapp: #25D366;
   --color-error:    #ba1a1a;
   --color-gold:     #E9C349;
+
+  --shadow-card:    0 10px 30px -8px rgba(29,64,171,0.10);
+  --shadow-hover:   0 16px 36px -10px rgba(29,64,171,0.18);
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
