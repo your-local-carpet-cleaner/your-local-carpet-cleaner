@@ -303,7 +303,14 @@
 }
 .quote-fab .material-symbols-outlined { font-size: 14px !important; }
 .quote-fab:hover { background: #1530a0; transform: scale(1.05); }
-@media (max-width: 480px) { .quote-fab-text { display: none; } .quote-fab { width: 34px; padding: 0; justify-content: center; } }
+@media (max-width: 767px) {
+  .quote-fab {
+    width: 56px; height: 56px; padding: 0;
+    justify-content: center; border-radius: 50%;
+  }
+  .quote-fab .material-symbols-outlined { font-size: 22px !important; }
+  .quote-fab-text { display: none; }
+}
 
 /* ── Modal submit ────────────────────────── */
 .modal-submit {
