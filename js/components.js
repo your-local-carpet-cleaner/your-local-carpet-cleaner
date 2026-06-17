@@ -143,7 +143,7 @@ function buildFooter() {
         <div style="display:flex;align-items:center;gap:0;margin-bottom:20px;">
           <div style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;padding:7px 12px;display:inline-block;">
             <span style="font-family:'Inter',sans-serif;font-size:6px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#6B7280;display:block;line-height:1.4;white-space:nowrap;">YOUR LOCAL CARPET</span>
-            <span style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;color:#1530a0;display:block;line-height:1.15;white-space:nowrap;">Cleaner</span>
+            <span style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;color:#111111;display:block;line-height:1.15;white-space:nowrap;">Cleaner</span>
           </div>
         </div>
         <p>Family-owned carpet and upholstery cleaning across Sydney. 20 years of trusted service.</p>
