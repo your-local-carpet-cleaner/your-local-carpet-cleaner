@@ -1,26 +1,26 @@
-/* Design tokens — Linen & Sage / Serene Hearth (soft sage, cream & dusty-rose theme) */
+/* Design tokens — White & Blue */
 :root {
   /* Colours */
-  --color-cream-base: #FBF9F4;
-  --color-sage-deep: #4A5D4C;
-  --color-sage: #4D6150;
-  --color-sage-light: #D2E8D3;
-  --color-dusty-rose: #C9A0A3;
-  --color-warm-grey: #706C61;
-  --color-surface: #FBF9F4;
-  --color-surface-container: #F0EEE9;
-  --color-surface-container-high: #EAE8E3;
-  --color-surface-container-low: #F5F3EE;
-  --color-surface-container-lowest: #FFFFFF;
-  --color-primary: #4D6150;
+  --color-primary:    #1d40ab;
+  --color-primary-dark: #1530a0;
+  --color-primary-light: #EEF2FF;
   --color-on-primary: #ffffff;
-  --color-on-surface: #1B1C19;
-  --color-on-surface-variant: #434843;
-  --color-outline: #737872;
-  --color-outline-variant: #E4E2DD;
+
+  --color-surface:               #FFFFFF;
+  --color-surface-container:     #F8F9FC;
+  --color-surface-container-high:#F3F4F6;
+  --color-surface-container-low: #FAFAFA;
+  --color-surface-container-lowest: #FFFFFF;
+
+  --color-on-surface:         #111111;
+  --color-on-surface-variant: #374151;
+  --color-warm-grey:          #6B7280;
+  --color-outline:            #9CA3AF;
+  --color-outline-variant:    #E5E7EB;
+
   --color-whatsapp: #25D366;
-  --color-error: #ba1a1a;
-  --color-gold: #E9C349;
+  --color-error:    #ba1a1a;
+  --color-gold:     #E9C349;
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
@@ -49,9 +49,9 @@
   --container-max: 1280px;
 
   /* Borders & shapes */
-  --radius-card: 1.5rem;        /* Soft rounded corners — brand rule */
+  --radius-card: 1.5rem;
   --radius-button: 9999px;
-  --border-card: 1px solid #E4E2DD;
-  --shadow-card: 0 10px 30px -8px rgba(74,93,76,0.08);
-  --shadow-hover: 0 16px 36px -10px rgba(74,93,76,0.16);
+  --border-card: 1px solid #E5E7EB;
+  --shadow-card: 0 10px 30px -8px rgba(29,64,171,0.08);
+  --shadow-hover: 0 16px 36px -10px rgba(29,64,171,0.16);
 }

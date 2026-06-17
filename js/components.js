@@ -35,9 +35,9 @@ function buildHeader() {
   <div class="header-inner">
     <!-- Logo -->
     <a href="${root('index.html')}" style="display:inline-flex;align-items:center;text-decoration:none;line-height:1;flex-shrink:0;">
-      <div style="background:#FFFFFF;border:1px solid #E4E2DD;border-radius:14px;padding:8px 14px;">
-        <span style="font-family:'Inter',sans-serif;font-size:7px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#706C61;display:block;line-height:1.4;white-space:nowrap;">YOUR LOCAL CARPET</span>
-        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;color:#4A5D4C;display:block;line-height:1.15;white-space:nowrap;">Cleaner</span>
+      <div style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:14px;padding:8px 14px;">
+        <span style="font-family:'Inter',sans-serif;font-size:7px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#6B7280;display:block;line-height:1.4;white-space:nowrap;">YOUR LOCAL CARPET</span>
+        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;color:#1530a0;display:block;line-height:1.15;white-space:nowrap;">Cleaner</span>
       </div>
     </a>
 
@@ -75,7 +75,7 @@ function buildHeader() {
 
     <!-- Desktop CTA -->
     <div style="display:none;" class="desk-cta-wrap">
-      <a href="tel:${PHONE_LINK}" style="font-size:13px;font-weight:700;color:#706C61;text-decoration:none;letter-spacing:.03em;" onmouseenter="this.style.color='#4A5D4C'" onmouseleave="this.style.color='#706C61'">${PHONE_DISPLAY}</a>
+      <a href="tel:${PHONE_LINK}" style="font-size:13px;font-weight:700;color:#6B7280;text-decoration:none;letter-spacing:.03em;" onmouseenter="this.style.color='#1530a0'" onmouseleave="this.style.color='#6B7280'">${PHONE_DISPLAY}</a>
       <button class="header-cta open-modal">Get a Free Quote</button>
     </div>
 
@@ -141,13 +141,13 @@ function buildFooter() {
       <!-- Col 1: Brand -->
       <div class="footer-col">
         <div style="display:flex;align-items:center;gap:0;margin-bottom:20px;">
-          <div style="background:#FFFFFF;border:1px solid #E4E2DD;border-radius:12px;padding:7px 12px;display:inline-block;">
-            <span style="font-family:'Inter',sans-serif;font-size:6px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#706C61;display:block;line-height:1.4;white-space:nowrap;">YOUR LOCAL CARPET</span>
-            <span style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;color:#4A5D4C;display:block;line-height:1.15;white-space:nowrap;">Cleaner</span>
+          <div style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;padding:7px 12px;display:inline-block;">
+            <span style="font-family:'Inter',sans-serif;font-size:6px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#6B7280;display:block;line-height:1.4;white-space:nowrap;">YOUR LOCAL CARPET</span>
+            <span style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;color:#1530a0;display:block;line-height:1.15;white-space:nowrap;">Cleaner</span>
           </div>
         </div>
         <p>Family-owned carpet and upholstery cleaning across Sydney. 20 years of trusted service.</p>
-        <p><a href="tel:${PHONE_LINK}" style="color:#4D6150;text-decoration:none;font-weight:700;">${PHONE_DISPLAY}</a></p>
+        <p><a href="tel:${PHONE_LINK}" style="color:#1d40ab;text-decoration:none;font-weight:700;">${PHONE_DISPLAY}</a></p>
         <div class="footer-social">
           <a href="https://www.facebook.com/carepluscarpetcleaning/" target="_blank" rel="noopener" aria-label="Facebook">
             <span class="material-symbols-outlined">thumb_up</span>
@@ -195,8 +195,8 @@ function buildFooter() {
       <div class="footer-col">
         <h4>Contact Us</h4>
         <ul>
-          <li style="color:#706C61;font-size:13px;padding:10px 0;border-bottom:1px solid #E4E2DD;">
-            <span class="material-symbols-outlined" style="font-size:14px;vertical-align:middle;margin-right:6px;color:#4D6150;">location_on</span>Sydney, NSW, Australia
+          <li style="color:#6B7280;font-size:13px;padding:10px 0;border-bottom:1px solid #E5E7EB;">
+            <span class="material-symbols-outlined" style="font-size:14px;vertical-align:middle;margin-right:6px;color:#1d40ab;">location_on</span>Sydney, NSW, Australia
           </li>
           <li><a href="tel:${PHONE_LINK}"><span class="material-symbols-outlined" style="font-size:14px;vertical-align:middle;margin-right:6px;">call</span>${PHONE_DISPLAY}</a></li>
           <li><a href="${WA_LINK}" target="_blank" rel="noopener"><span class="material-symbols-outlined" style="font-size:14px;vertical-align:middle;margin-right:6px;">chat</span>WhatsApp</a></li>
