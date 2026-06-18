@@ -776,7 +776,24 @@ body {
 @media (max-width: 500px) {
   .services-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
-  .process-steps { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; gap: 10px; }
+  .process-step {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+  }
+  .process-num {
+    grid-row: 1 / -1;
+    align-self: center;
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  .process-label { margin-bottom: 2px; }
+  .process-desc { margin: 0; }
 }
 
 /* ─── Colour balance: frequency-over-volume ───────────────────
