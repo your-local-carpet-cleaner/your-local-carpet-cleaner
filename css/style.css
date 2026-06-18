@@ -444,12 +444,13 @@ body {
 }
 
 .why-card {
-  background: #FFFFFF;
+  background: #F8F9FC;
   border: 1px solid #E5E7EB;
   border-radius: 20px;
   padding: 36px 28px;
   text-align: center;
   transition: box-shadow .25s, transform .25s;
+  box-shadow: 0 10px 30px -10px rgba(29,64,171,0.08);
 }
 .why-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px -10px rgba(29,64,171,0.14); }
 
