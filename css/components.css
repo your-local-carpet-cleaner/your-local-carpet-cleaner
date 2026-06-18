@@ -323,11 +323,10 @@
 .modal-submit:hover { background: #1530a0; border-color: #1530a0; }
 
 /* ── Footer ──────────────────────────────── */
-/* Replace YOUR_MAPBOX_TOKEN below with your token from mapbox.com/account/access-tokens */
 #site-footer footer {
   background:
     linear-gradient(rgba(13,28,85,0.87), rgba(13,28,85,0.87)),
-    url('https://api.mapbox.com/styles/v1/mapbox/light-v11/static/151.2093,-33.8688,10,0/1600x600@2x?access_token=YOUR_MAPBOX_TOKEN') center/cover no-repeat,
+    url('/images/sydney-map.jpg') center/cover no-repeat,
     #1d40ab;
   border-top: none;
 }
