@@ -568,3 +568,11 @@
   color: #1d40ab; text-decoration: none; transition: color 0.2s;
 }
 .svc-card a:hover { color: #1530a0; }
+
+/* ── Inner page box text bump ─────────────
+   Index uses body.bg-background; all other pages don't.
+   Inline-styled 13px body copy in boxes gets nudged to 15px. ── */
+body:not(.bg-background) [style*="font-size:13px"] { font-size: 15px !important; }
+body:not(.bg-background) [style*="font-size:14px"] { font-size: 16px !important; }
+body:not(.bg-background) .faq-answer p { font-size: 15px; }
+body:not(.bg-background) .svc-card p { font-size: 15px; }
