@@ -755,6 +755,8 @@ body {
   .hero-stat-divider { display: none; }
   .hero-stat { padding: 16px; }
   .hero-stat-n { font-size: 20px; }
+  .hero-stat--desktop-only { display: none; }
+  .hero-stat-reviews { display: none; }
 
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
