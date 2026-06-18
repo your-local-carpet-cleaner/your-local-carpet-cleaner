@@ -294,16 +294,16 @@ body {
 .svc-grid-card .svc-icon-sm    { color: rgba(255,255,255,0.85); }
 
 .svc-grid-card--cta {
-  background: #E5E7EB !important;
+  background: #b0aeac !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #D1D5DB;
+  border: 1px solid #9e9c9a;
 }
 .svc-grid-card--cta::before { display: none; }
-.svc-grid-card--cta:hover { background: #D1D5DB !important; border-color: #111111; }
+.svc-grid-card--cta:hover { background: #9e9c9a !important; border-color: #111111; }
 .svc-grid-card--cta .svc-grid-title { color: #111111 !important; }
 .svc-grid-card--cta .material-symbols-outlined { color: #111111 !important; }
 
