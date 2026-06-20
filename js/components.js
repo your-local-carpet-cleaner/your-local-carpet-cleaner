@@ -183,13 +183,14 @@ function buildFooter() {
           <li><a href="${root('upholstery-cleaning.html')}">Upholstery Cleaning</a></li>
           <li><a href="${root('rug-cleaning.html')}">Rug Cleaning</a></li>
           <li><a href="${root('mattress-cleaning.html')}">Mattress Cleaning</a></li>
-          <li><a href="${root('stain-odour-removal.html')}">Stain &amp; Odour Removal</a></li>
-          <li><a href="${root('end-of-lease-cleaning.html')}">End of Lease Cleaning</a></li>
-          <li><a href="${root('commercial-carpet-cleaning.html')}">Commercial Cleaning</a></li>
-          <li><a href="${root('leather-cleaning.html')}">Leather Cleaning</a></li>
-          <li><a href="${root('water-damage-restoration.html')}">Water Damage Restoration</a></li>
-          <li><a href="${root('tile-and-grout-cleaning.html')}">Tile &amp; Grout Cleaning</a></li>
-          <li><a href="${root('carpet-and-fabric-protection.html')}">Carpet &amp; Fabric Protection</a></li>
+          <li class="footer-service-extra"><a href="${root('stain-odour-removal.html')}">Stain &amp; Odour Removal</a></li>
+          <li class="footer-service-extra"><a href="${root('end-of-lease-cleaning.html')}">End of Lease Cleaning</a></li>
+          <li class="footer-service-extra"><a href="${root('commercial-carpet-cleaning.html')}">Commercial Cleaning</a></li>
+          <li class="footer-service-extra"><a href="${root('leather-cleaning.html')}">Leather Cleaning</a></li>
+          <li class="footer-service-extra"><a href="${root('water-damage-restoration.html')}">Water Damage Restoration</a></li>
+          <li class="footer-service-extra"><a href="${root('tile-and-grout-cleaning.html')}">Tile &amp; Grout Cleaning</a></li>
+          <li class="footer-service-extra"><a href="${root('carpet-and-fabric-protection.html')}">Carpet &amp; Fabric Protection</a></li>
+          <li class="footer-services-more"><a href="${root('services.html')}">See All Services →</a></li>
         </ul>
       </div>
 
