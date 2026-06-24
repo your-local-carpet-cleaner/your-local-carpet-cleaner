@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yourlocalcarpetcleaner.com.au/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-
   <url><loc>https://yourlocalcarpetcleaner.com.au/carpet-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/upholstery-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/rug-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -14,29 +13,55 @@
   <url><loc>https://yourlocalcarpetcleaner.com.au/tile-and-grout-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/carpet-and-fabric-protection.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
   <url><loc>https://yourlocalcarpetcleaner.com.au/service-areas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/sydney.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/parramatta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/liverpool.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/auburn.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/bankstown.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/baulkham-hills.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/blacktown.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/bondi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/burwood.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/cabramatta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/campbelltown.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/penrith.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/castle-hill.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/casula.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/chatswood.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/sefton.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/coogee.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/cronulla.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/epping.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/fairfield.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/hurstville.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/ingleburn.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/kogarah.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/lidcombe.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/liverpool.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/marrickville.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/mascot.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/merrylands.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/miranda.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/narellan.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/newtown.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/parramatta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/penrith.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/prestons.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/randwick.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/revesby.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
+  <url><loc>https://yourlocalcarpetcleaner.com.au/rockdale.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/rouse-hill.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/sefton.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/seven-hills.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/st-marys.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/strathfield.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/surry-hills.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/sydney.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/about.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/gallery.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/reviews.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://yourlocalcarpetcleaner.com.au/contact.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-
   <url><loc>https://yourlocalcarpetcleaner.com.au/blog.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/blog-post-1.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/blog-post-2.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/blog-post-3.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/blog-post-4.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/blog-post-5.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://yourlocalcarpetcleaner.com.au/blog-post-6.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/how-often-should-you-clean-your-carpets-sydney</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/get-rid-of-pet-odour-from-carpet</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/end-of-lease-carpet-cleaning-sydney</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/steam-cleaning-vs-dry-cleaning-carpet</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/remove-carpet-stains-at-home</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://yourlocalcarpetcleaner.com.au/is-upholstery-cleaning-worth-it</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>

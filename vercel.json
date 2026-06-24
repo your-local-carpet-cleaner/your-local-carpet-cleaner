@@ -68,9 +68,27 @@
     { "source": "/sydney", "destination": "/sydney.html", "permanent": true },
 
     { "source": "/blog", "destination": "/blog.html", "permanent": true },
-    { "source": "/blog/:path*", "destination": "/blog.html", "permanent": true },
 
-    { "source": "/how-often-should-you-clean-your-carpets-sydney", "destination": "/blog-post-1.html", "permanent": true },
-    { "source": "/how-often-should-you-clean-your-carpets-sydney/", "destination": "/blog-post-1.html", "permanent": true }
+    { "source": "/blog-post-1.html", "destination": "/how-often-should-you-clean-your-carpets-sydney", "permanent": true },
+    { "source": "/blog-post-2.html", "destination": "/get-rid-of-pet-odour-from-carpet", "permanent": true },
+    { "source": "/blog-post-3.html", "destination": "/end-of-lease-carpet-cleaning-sydney", "permanent": true },
+    { "source": "/blog-post-4.html", "destination": "/steam-cleaning-vs-dry-cleaning-carpet", "permanent": true },
+    { "source": "/blog-post-5.html", "destination": "/remove-carpet-stains-at-home", "permanent": true },
+    { "source": "/blog-post-6.html", "destination": "/is-upholstery-cleaning-worth-it", "permanent": true },
+
+    { "source": "/how-often-should-you-clean-your-carpets-sydney/", "destination": "/how-often-should-you-clean-your-carpets-sydney", "permanent": true },
+    { "source": "/get-rid-of-pet-odour-from-carpet/", "destination": "/get-rid-of-pet-odour-from-carpet", "permanent": true },
+    { "source": "/end-of-lease-carpet-cleaning-sydney/", "destination": "/end-of-lease-carpet-cleaning-sydney", "permanent": true },
+    { "source": "/steam-cleaning-vs-dry-cleaning-carpet/", "destination": "/steam-cleaning-vs-dry-cleaning-carpet", "permanent": true },
+    { "source": "/remove-carpet-stains-at-home/", "destination": "/remove-carpet-stains-at-home", "permanent": true },
+    { "source": "/is-upholstery-cleaning-worth-it/", "destination": "/is-upholstery-cleaning-worth-it", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/how-often-should-you-clean-your-carpets-sydney", "destination": "/blog-post-1.html" },
+    { "source": "/get-rid-of-pet-odour-from-carpet", "destination": "/blog-post-2.html" },
+    { "source": "/end-of-lease-carpet-cleaning-sydney", "destination": "/blog-post-3.html" },
+    { "source": "/steam-cleaning-vs-dry-cleaning-carpet", "destination": "/blog-post-4.html" },
+    { "source": "/remove-carpet-stains-at-home", "destination": "/blog-post-5.html" },
+    { "source": "/is-upholstery-cleaning-worth-it", "destination": "/blog-post-6.html" }
   ]
 }
