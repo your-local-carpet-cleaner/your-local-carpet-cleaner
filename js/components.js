@@ -227,6 +227,7 @@ function buildFooter() {
     <div class="footer-bottom">
       <p>© 2025 Your Local Carpet Cleaner. All rights reserved. Sydney, NSW, Australia.</p>
       <p>Family-owned &amp; operated since 2004 · 20 years of trusted service</p>
+      <p>Site by <a href="https://castino.info" target="_blank" rel="noopener">Castino Web Design</a></p>
     </div>
   </div>
 </footer>`;
