@@ -423,34 +423,76 @@
     });
   }
 
-  function async wireForm(formId, successId){
-    var form = document.getElementById(formId);
-    var success = document.getElementById(successId);
-    if(!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
+const form = document.querySelector("form");
 
-      try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(this))),
-      });
-      if (!res.ok) throw new Error();
-      window.location.href = THANKYOU_URL;
-    } catch {
-      btn.disabled = false;
-      btn.textContent = 'Send Quote Request';
-      alert('Something went wrong. Please call us on 0451 286 550.');
-    }
-      // Front-end only demo: no backend is connected.
-      // Replace this handler with a real submission (e.g. POST to your CRM/email service).
-      form.classList.add('hidden');
-      success.classList.add('visible');
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const btn = this.querySelector('button[type="submit"]');
+
+  btn.disabled = true;
+  btn.textContent = "Sending...";
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(Object.fromEntries(new FormData(this))),
     });
+
+    // Check if server returned an error
+    if (!response.ok) {
+      const error = await response.text();
+      throw new Error(error || "Request failed");
+    }
+
+    // If your API returns JSON
+    // const result = await response.json();
+
+    window.location.href = THANKYOU_URL;
+  } catch (err) {
+    console.error("Contact Form Error:", err);
+
+    btn.disabled = false;
+    btn.textContent = "Send Quote Request";
+
+    alert(
+      "Sorry! We couldn't send your request. Please try again or call us on 0451 286 550."
+    );
   }
-  wireForm('stripForm', 'stripSuccess');
-  wireForm('footForm', 'footSuccess');
+});
+
+  
+  // function async wireForm(formId, successId){
+  //   var form = document.getElementById(formId);
+  //   var success = document.getElementById(successId);
+  //   if(!form) return;
+  //   form.addEventListener('submit', function(e){
+  //     e.preventDefault();
+
+  //     try {
+  //     const res = await fetch('/api/contact', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify(Object.fromEntries(new FormData(this))),
+  //     });
+  //     if (!res.ok) throw new Error();
+  //     window.location.href = THANKYOU_URL;
+  //   } catch {
+  //     btn.disabled = false;
+  //     btn.textContent = 'Send Quote Request';
+  //     alert('Something went wrong. Please call us on 0451 286 550.');
+  //   }
+  //     // Front-end only demo: no backend is connected.
+  //     // Replace this handler with a real submission (e.g. POST to your CRM/email service).
+  //     form.classList.add('hidden');
+  //     success.classList.add('visible');
+  //   });
+  // }
+  // wireForm('stripForm', 'stripSuccess');
+  // wireForm('footForm', 'footSuccess');
 </script>
 
 </body>
