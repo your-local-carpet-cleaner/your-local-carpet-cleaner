@@ -507,20 +507,53 @@
       nav.style.borderBottom = '1px solid var(--line)';
     });
   }
+
   function wireForm(formId, successId){
-    var form = document.getElementById(formId);
-    var success = document.getElementById(successId);
-    if(!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      // Front-end only demo: no backend is connected.
-      // Replace this handler with a real submission (e.g. POST to your CRM/email service).
-      form.classList.add('hidden');
-      success.classList.add('visible');
-    });
-  }
-  wireForm('heroForm', 'heroSuccess');
-  wireForm('ctaForm', 'ctaSuccess');
+  var form = document.getElementById(formId);
+  var success = document.getElementById(successId);
+  if(!form) return;
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(this))),
+      });
+
+      if (!res.ok) throw new Error();
+ form.classList.add('hidden');
+ success.classList.add('visible');
+      
+    } catch {
+      
+      alert('Something went wrong. Please call us on 0451 286 550.');
+    }
+
+    // Front-end only demo: no backend is connected.
+    // Replace this handler with a real submission (e.g. POST to your CRM/email service).
+    
+  });
+}
+
+wireForm('heroForm', 'heroSuccess');
+wireForm('ctaForm', 'ctaSuccess');
+  // function wireForm(formId, successId){
+  //   var form = document.getElementById(formId);
+  //   var success = document.getElementById(successId);
+  //   if(!form) return;
+  //   form.addEventListener('submit', function(e){
+  //     e.preventDefault();
+  //     // Front-end only demo: no backend is connected.
+  //     // Replace this handler with a real submission (e.g. POST to your CRM/email service).
+  //     form.classList.add('hidden');
+  //     success.classList.add('visible');
+  //   });
+  // }
+  // wireForm('heroForm', 'heroSuccess');
+  // wireForm('ctaForm', 'ctaSuccess');
 </script>
 
 </body>
