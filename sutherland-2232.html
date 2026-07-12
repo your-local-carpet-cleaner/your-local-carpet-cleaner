@@ -648,21 +648,63 @@
 </footer>
 
 <script>
-  function wireForm(formId){
-    var form = document.getElementById(formId);
-    if(!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
+  
+function wireForm(formId){
+  var form = document.getElementById(formId);
+  if(!form) return;
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(this))),
+      });
+
+      if (!res.ok) throw new Error();
+
       var status = form.querySelector('.form-status');
       var nameField = form.querySelector('input[name="name"]');
       status.textContent = "Thanks" + (nameField && nameField.value ? ", " + nameField.value.split(' ')[0] : "") + " — your enquiry has been received. We'll call you back shortly.";
       status.style.color = "#1C6F66";
       status.classList.add('show');
       form.reset();
-    });
-  }
-  wireForm('formTop');
-  wireForm('formBottom');
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Send Quote Request';
+      alert('Something went wrong. Please call us on 0451 286 550.');
+    }
+
+    // Front-end only demo: no backend is connected.
+    // Replace this handler with a real submission (e.g. POST to your CRM/email service).
+    form.classList.add('hidden');
+    success.classList.add('visible');
+  });
+}
+
+ // wireForm('formTop');
+  // wireForm('formBottom');
+
+  
+  // function wireForm(formId){
+  //   var form = document.getElementById(formId);
+  //   if(!form) return;
+  //   form.addEventListener('submit', function(e){
+  //     e.preventDefault();
+  //     var status = form.querySelector('.form-status');
+  //     var nameField = form.querySelector('input[name="name"]');
+  //     status.textContent = "Thanks" + (nameField && nameField.value ? ", " + nameField.value.split(' ')[0] : "") + " — your enquiry has been received. We'll call you back shortly.";
+  //     status.style.color = "#1C6F66";
+  //     status.classList.add('show');
+  //     form.reset();
+  //   });
+  // }
+  // wireForm('formTop');
+  // wireForm('formBottom');
+
+  
 </script>
 
 </body>
