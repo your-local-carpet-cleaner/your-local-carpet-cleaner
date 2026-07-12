@@ -8,7 +8,7 @@ module.exports = async function handler(req, res) {
 
   const { name, phone, email, service, suburb, message } = req.body || {};
 
-  if (!name || !phone || !service || !suburb) {
+  if ( !phone || !service ) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
