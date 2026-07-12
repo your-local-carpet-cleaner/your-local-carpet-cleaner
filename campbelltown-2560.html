@@ -450,8 +450,8 @@ form.addEventListener("submit", async function (e) {
 
     // If your API returns JSON
     // const result = await response.json();
-
-    window.location.href = THANKYOU_URL;
+   var success = document.getElementById('footSuccess');
+   success.classList.add('visible');
   } catch (err) {
     console.error("Contact Form Error:", err);
 
