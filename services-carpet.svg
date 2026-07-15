@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rolled carpet being steam cleaned illustration">
+  <circle cx="100" cy="100" r="92" fill="#F3E6E9"/>
+  <rect x="40" y="80" width="120" height="60" rx="12" fill="#D4A24C"/>
+  <circle cx="40" cy="110" r="30" fill="#B9852E"/>
+  <g stroke="#F3E6E9" stroke-width="3" opacity="0.7">
+    <line x1="60" y1="96" x2="150" y2="96"/>
+    <line x1="60" y1="110" x2="150" y2="110"/>
+    <line x1="60" y1="124" x2="150" y2="124"/>
+  </g>
+  <path d="M150 70 C 160 55 175 50 180 35" fill="none" stroke="#3A1F3D" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M130 65 C 138 52 150 48 154 35" fill="none" stroke="#3A1F3D" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+</svg>

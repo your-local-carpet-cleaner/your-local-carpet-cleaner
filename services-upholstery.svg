@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Armchair being steam cleaned illustration">
+  <circle cx="100" cy="100" r="92" fill="#F3E6E9"/>
+  <rect x="55" y="100" width="90" height="46" rx="14" fill="#3A1F3D"/>
+  <rect x="46" y="84" width="22" height="56" rx="10" fill="#552C58"/>
+  <rect x="132" y="84" width="22" height="56" rx="10" fill="#552C58"/>
+  <rect x="60" y="66" width="80" height="36" rx="14" fill="#6A3A6E"/>
+  <circle cx="68" cy="150" r="7" fill="#270F29"/>
+  <circle cx="132" cy="150" r="7" fill="#270F29"/>
+  <path d="M100 50 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z" fill="#D4A24C"/>
+</svg>

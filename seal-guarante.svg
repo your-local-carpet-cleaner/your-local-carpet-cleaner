@@ -1,0 +1,6 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Satisfaction guarantee seal badge">
+  <circle cx="100" cy="100" r="86" fill="#D4A24C"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#B9852E" stroke-width="6" stroke-dasharray="6 8"/>
+  <circle cx="100" cy="100" r="62" fill="#FBF3E7"/>
+  <path d="M72 102 l20 20 36 -44" fill="none" stroke="#3A1F3D" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
